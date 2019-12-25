@@ -9,10 +9,13 @@ export default function SignupFields(props) {
 
     function handleSearch() {
         if (userName === "admin" && password === "admin") {
-            if (window["todo_header_app"]) {
-                window["todo_header_app"]["username"] = userName;
-                alert("Welcome " + userName)
-            }
+            window.dispatchEvent(
+                new CustomEvent(`${env.APP_NAME}_set_username`, {
+                    detail: {
+                        userName: userName
+                    }
+                })
+            );
         } else {
             alert("Signup Unsuccessful!!")
         }
