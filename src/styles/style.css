@@ -1,13 +1,5 @@
 
-.todo_signup_app-username {
-    color: #4e4e4e;
-    padding: 5px;
-    font-size: 25px;
-    width: 100%;
-}
-
-
-.todo_signup_app-password {
+.todo_signup_app-textfield {
     color: #4e4e4e;
     padding: 5px;
     font-size: 25px;

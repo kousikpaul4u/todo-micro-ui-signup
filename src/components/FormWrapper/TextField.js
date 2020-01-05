@@ -25,7 +25,7 @@ export default function TextField(props) {
             finalClass = className;
         }
         if (error) {
-            finalClass = finalClass + " mrt-has-error";
+            finalClass = finalClass + " has-error";
         }
         setFinalClassName(finalClass);
     }
